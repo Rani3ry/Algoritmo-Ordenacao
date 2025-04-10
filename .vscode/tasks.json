@@ -1,0 +1,44 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "compilar",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "main.c",
+                "-o",
+                "programa.exe"
+            ],
+            "group": "build",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Compila o programa em C"
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: gcc.exe arquivo de build ativo",
+            "command": "C:\\MinGW\\bin\\gcc.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Tarefa gerada pelo Depurador."
+        }
+    ]
+}
